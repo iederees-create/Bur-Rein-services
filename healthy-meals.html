@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy Meals</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="healthy-meals.css">
 </head>
 <body>
     <header>
-        <h1>Healthy Meals</h1>
+        <nav>
+            <a href="index.html" class="logo">Bur-Rein Services</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#submit">Submit a Service</a></li>
+            </ul>
+            <form>
+                <input type="search" placeholder="Search services...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Benefits</h2>
-            <ul>
-                <li>Healthy and wholesome meals</li>
-                <li>Saves you time to cook</li>
-                <li>Convenience</li>
-                <li>Free delivery in the greater Bur-Rein area</li>
-            </ul>
-        </section>
+        <h2>Healthy Meals</h2>
+        <p>Made fresh daily! Enjoy healthy and wholesome meals for only R80 per plate.</p>
+        <ul>
+            <li>Healthy and wholesome meals</li>
+            <li>Saves you time to cook</li>
+            <li>Convenience</li>
+            <li>Free delivery in the greater Bu-Rein area</li>
+        </ul>
+        <p>WhatsApp your name and address to 0721274493 to receive the menu. Menus are updated weekly.</p>
+        <p>Also available: Healthy packed lunches for children and professionals. Price range: R35-R55.</p>
 
         <section>
             <h2>Submit Your Service</h2>
-            <form action="https://formspree.io/your_form_endpoint" method="POST">
+            <p>Are you a service provider in the Bur-Rein area? Submit your service to be listed on our website!</p>
+            <form action="https://formspree.io/f/mwkjngrv" method="POST">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -43,7 +56,7 @@
     </main>
 
     <footer>
-        <p>&copy; Healthy Meals. All rights reserved.</p>
+        <p>&copy; Bur-Rein Services. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
