@@ -1,149 +1,83 @@
-/* /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  background-color: #F7F7F7;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  margin: 0;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #5DADE2;
-}
-
-/* Header styles */
 header {
-    background-color: #5DADE2;
-    padding: 1rem;
+  background-color: #4B0082;
+  color: #FFFFFF;
+  padding: 1rem;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 nav ul {
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
-nav ul li form {
-    display: flex;
-    align-items: center;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-nav ul li form input[type="search"] {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 0.25rem;
-    outline: none;
-}
-
-nav ul li form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 0.25rem 0.5rem;
-    margin-left: 0.5rem;
-    cursor: pointer;
-    outline: none;
-}
-
-/* Main content styles */
 main {
-    padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-form {
-    margin-top: 1rem;
+h1, h2, h3 {
+  font-weight: bold;
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+a {
+  color: #4B0082;
+  text-decoration: none;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+a:hover {
+  text-decoration: underline;
 }
 
-form input[type="submit"] {
-    width: auto;
-    background-color: #5DADE2;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    border-radius: 3px;
-    padding: 0.5rem 1rem;
+button {
+  background-color: #4B0082;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-/* Services list styles */
-.services-list {
-    padding: 0;
+button:hover {
+  background-color: #6A5ACD;
 }
-
-.services-list li {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    margin-bottom: 1rem;
-    background-color: #f1f1f1;
-}
-
-.services-list li:hover {
-    background-color: #e0e0e0;
-}
-
-.services-list a {
-    display: block;
-}
-
-/* Footer styles */
-footer {
-    background-color: #5DADE2;
-    padding: 1rem;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    color: #fff;
-}
-
-
 
 
