@@ -147,14 +147,76 @@
   }
 </script>
 
+<h3>Cashews</h3>
+<select id="Cashews">
+   <option value="100_raw">Raw 100g - R50</option>
+   <option value="200_raw">Raw 200g - R80</option>
+   <option value="500_raw">Raw 500g - R200</option>
+   <option value="1000_raw">Raw 1kg - R300</option>
+   <option value="100_roasted">Roasted 100g - R50</option>
+   <option value="200_roasted">Roasted 200g - R80</option>
+   <option value="500_roasted">Roasted 500g - R200</option>
+   <option value="1000_roasted">Roasted 1kg - R300</option>
+   <option value="100_roasted_salt">Roasted and Salted 100g - R50</option>
+   <option value="200_roasted_salt">Roasted and Salted 200g - R80</option>
+   <option value="500_roasted_salt">Roasted and Salted 500g - R200</option>
+   <option value="1000_roasted_salt">Roasted and Salted 1kg - R300</option>
+   <option value="100_peri_peri">Peri-Peri 100g - R50</option>
+   <option value="200_peri_peri">Peri-Peri 200g - R90</option>
+   <option value="500_peri_peri">Peri-Peri 500g - R250</option>
+   <option value="1000_peri_peri">Peri-Peri 1kg - R350</option>
+   <option value="100_lemon_herb">Lemon and Herb 100g - R50</option>
+   <option value="200_lemon_herb">Lemon and Herb 200g - R90</option>
+   <option value="500_lemon_herb">Lemon and Herb 500g - R250</option>
+   <option value="1000_lemon_herb">Lemon and Herb 1kg - R350</option>
+   <option value="100_smokehouse">Smokehouse 100g - R50</option>
+   <option value="200_smokehouse">Smokehouse 200g - R90</option>
+   <option value="500_smokehouse">Smokehouse 500g - R250</option>
+   <option value="1000_smokehouse">Smokehouse 1kg - R350</option>
+</select>
+<button onclick="sendOrder()">Order Now</button>
+<script>
+  function sendOrder() {
+    var variant = document.getElementById('Cashews').value;
+    var quantity = variant.split("_")[0];
+    var option = variant.split("_")[1];
+    var product;
+    switch (option) {
+      case 'raw':
+        product = 'Raw';
+        break;
+      case 'roasted':
+        product = 'Roasted';
+        break;
+      case 'roasted_salt':
+        product = 'Roasted and Salted';
+        break;
+      case 'peri_peri':
+        product = 'Peri-Peri';
+        break;
+      case 'lemon_herb':
+        product = 'Lemon and Herb';
+        break;
+      case 'smokehouse':
+        product = 'Smokehouse';
+        break;
+      default:
+        product = 'Cashews';
+      var subject = "Nuts and More Order";
+    var body = "Order Details:%0D%0AProduct: " + product + "%0D%0AQuantity: " + quantity + "g%0D%0ADelivery Address:%0D%0AContact Number:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ASent from Mail for Windows";
+    window.location.href = "mailto:iedereesfrancis@gmail.com?subject=" + subject + "&body=" + body;
+  }
 
-      <h2>Contact Us</h2>
-      <p>To place an order or for more information, please contact:</p>
-      <ul>
-        <li><strong>Whatsapp:</strong> 0721234567</li>
-        <li><strong>Email:</strong> samosas@bur-rein.com</li>
-      </ul>
-    </section>
+
+
+
+
+
+
+
+
+
+
       <h2>Submit Your Service</h2>
       <p>Are you a service provider in the Bur-Rein area? Submit your service to be listed on our website!</p>
       <form action="https://formspree.io/f/mwkjngrv" method="POST">
