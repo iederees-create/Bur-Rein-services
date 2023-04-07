@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog-walking</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Dog Walking</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#submit">Submit a Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+   <h2><h2>"Give your dog the exercise and attention they need with our trusted dog walking services."</h2>
+<p>"Our experienced dog walkers will provide your furry friend with a fun and safe walking experience, leaving you with peace of mind."</p>
+    </section>
+
+    <section>
+      <h2>Search for a Service</h2>
+      <form>
+        <input type="text" id="search-bar" name="search" placeholder="Enter service keyword...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+  <section>
+  <h1>Dog Walking Services</h1>
+  <h2>What We Offer</h2>
+  <ul>
+    <li>30-minute dog walks</li>
+    <li>60-minute dog walks</li>
+    <li>Customized walk schedules to fit your needs</li>
+    <li>Water and treats provided</li>
+  </ul>
+  <h2>Our Rates</h2>
+  <h3>30-minute walk: R100</h3>
+  <h3>60-minute walk: R175</h3>
+  <h3>Discounts available for regular clients and multiple dogs</h3>
+  <h2>Book Our Services</h2>
+  <p>To book our dog walking services, please fill out the form below and we'll get back to you as soon as possible.</p>
+  <form id="dog-walking-form" action="https://formspree.io/f/mvonvpnj" method="POST">" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto"><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"><br>
+    <label for="dog-name">Dog Name:</label>
+    <input type="text" id="dog-name" name="dog-name"><br>
+    <label for="dog-breed">Dog Breed:</label>
+    <input type="text" id="dog-breed" name="dog-breed"><br>
+    <label for="walk-duration">Walk Duration:</label>
+    <select id="walk-duration" name="walk-duration">
+      <option value="30 Minutes">30 Minutes</option>
+      <option value="60 Minutes">60 Minutes</option>
+    </select><br>
+    <label for="preferred-walking-times">Preferred Walking Times:</label>
+    <input type="text" id="preferred-walking-times" name="preferred-walking-times"><br>
+    <label for="special-requests">Special Requests:</label>
+    <textarea id="special-requests" name="special-requests"></textarea><br>
+    <button type="submit">Submit Request</button>
+  </form>
+  </main>
+
+
+  <footer>
+    <p>&copy; Bur-Rein Services. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

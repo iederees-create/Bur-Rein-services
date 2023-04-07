@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutty Delights</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Nutty Delights</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#submit">Submit a Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <section>
+  <h2>Welcome to Nuts, Fruit, Coated, Seeds, Grains &amp; Beans</h2>
+  <p>Find the freshest and highest-quality nuts, fruit, coated products, seeds, grains, and beans, all in one place!</p>
+</section>
+
+    </section>
+
+    <section>
+      <h2>Search for a Service</h2>
+      <form>
+        <input type="text" id="search-bar" name="search" placeholder="Enter service keyword...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Menu</h2>
+			<h3>Almonds</h3>
+				<select id="almond-quantity">
+					<option value="100">100g - R40</option>
+					<option value="200">200g - R60</option>
+					<option value="500">500g - R100</option>
+					<option value="1000">1kg - R200</option>
+				</select>
+			<button onclick="sendOrder()">Order Now</button>
+
+      <script>
+        function sendOrder() {
+         var quantity = document.getElementById('almond-quantity').value;
+         var subject = "Nuts and More Order";
+         var body = "Order Details:%0D%0AProduct: Almonds%0D%0AQuantity: " + quantity + "g%0D%0ADelivery Address:%0D%0AContact Number:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ASent from Mail for Windows";
+       window.location.href = "mailto:iedereesfrancis@gmail.com?subject=" + subject + "&body=" + body;
+      }
+      </script>
+
+      <h3>Wasabi Coated Peanuts</h3>
+				<select id="Wasabi Coated Peanuts">
+					<option value="100">100g - R40</option>
+					<option value="200">200g - R60</option>
+					<option value="500">500g - R100</option>
+					<option value="1000">1kg - R200</option>
+				</select>
+			<button onclick="sendOrder()">Order Now</button>
+
+      <script>
+        function sendOrder() {
+         var quantity = document.getElementById('Wasabi Coated Peanuts').value;
+         var subject = "Nuts and More Order";
+         var body = "Order Details:%0D%0AProduct: Wasabi Coated Peanuts%0D%0AQuantity: " + quantity + "g%0D%0ADelivery Address:%0D%0AContact Number:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ASent from Mail for Windows";
+       window.location.href = "mailto:iedereesfrancis@gmail.com?subject=" + subject + "&body=" + body;
+      }
+      </script>
+
+      <h3>Pine Kernels</h3>
+				<select id="Pine Kernels">
+					<option value="100">100g - R160</option>
+					<option value="200">200g - R280</option>
+					<option value="500">500g - R680</option>
+					<option value="1000">1kg - R1350</option>
+				</select>
+			<button onclick="sendOrder()">Order Now</button>
+      <script>
+        function sendOrder() {
+         var quantity = document.getElementById('Pine Kernels').value;
+         var subject = "Nuts and More Order";
+         var body = "Order Details:%0D%0AProduct: Pine Kernels%0D%0AQuantity: " + quantity + "g%0D%0ADelivery Address:%0D%0AContact Number:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ASent from Mail for Windows";
+       window.location.href = "mailto:iedereesfrancis@gmail.com?subject=" + subject + "&body=" + body;
+      }
+      </script>
+    <h3>Mixed nuts</h3>
+     <select id="mixed-nuts">
+  <option value="mixed-nuts-raw">Mixed Nuts Raw</option>
+  <option value="mixed-nuts-roasted">Mixed Nuts Roasted</option>
+  <option value="mixed-nuts-roasted-salted">Mixed Nuts Roasted and Salted</option>
+  <option value="mixed-nuts-peanuts-raw">Mixed Nuts with Peanuts Raw</option>
+  <option value="mixed-nuts-peanuts-roasted">Mixed Nuts with Peanuts Roasted</option>
+  <option value="mixed-nuts-peanuts-roasted-salted">Mixed Nuts with Peanuts Roasted and Salted</option>
+  <option value="mixed-nuts-cranberries">Mixed Nuts with Cranberries</option>
+  <option value="mixed-nuts-raisins">Mixed Nuts with Raisins</option>
+</select>
+<select id="mixed-nuts-quantity">
+  <option value="100">100g - R50</option>
+  <option value="200">200g - R80</option>
+  <option value="500">500g - R180</option>
+  <option value="1000">1kg - R350</option>
+</select>
+<button onclick="sendOrder()">Order Now</button>
+
+<script>
+  function sendOrder() {
+    var variant = document.getElementById('mixed-nuts').value;
+    var quantity = document.getElementById('mixed-nuts-quantity').value;
+    var product;
+    switch (variant) {
+      case 'mixed-nuts-raw':
+        product = 'Mixed Nuts Raw';
+        break;
+      case 'mixed-nuts-roasted':
+        product = 'Mixed Nuts Roasted';
+        break;
+      case 'mixed-nuts-roasted-salted':
+        product = 'Mixed Nuts Roasted and Salted';
+        break;
+      case 'mixed-nuts-peanuts-raw':
+        product = 'Mixed Nuts with Peanuts Raw';
+        break;
+      case 'mixed-nuts-peanuts-roasted':
+        product = 'Mixed Nuts with Peanuts Roasted';
+        break;
+      case 'mixed-nuts-peanuts-roasted-salted':
+        product = 'Mixed Nuts with Peanuts Roasted and Salted';
+        break;
+      case 'mixed-nuts-cranberries':
+        product = 'Mixed Nuts with Cranberries';
+        break;
+      case 'mixed-nuts-raisins':
+        product = 'Mixed Nuts with Raisins';
+        break;
+      default:
+        product = 'Mixed Nuts';
+    }
+    var subject = "Nuts and More Order";
+    var body = "Order Details:%0D%0AProduct: " + product + "%0D%0AQuantity: " + quantity + "g%0D%0ADelivery Address:%0D%0AContact Number:%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0ASent from Mail for Windows";
+    window.location.href = "mailto:iedereesfrancis@gmail.com?subject=" + subject + "&body=" + body;
+  }
+</script>
+
+
+      <h2>Contact Us</h2>
+      <p>To place an order or for more information, please contact:</p>
+      <ul>
+        <li><strong>Whatsapp:</strong> 0721234567</li>
+        <li><strong>Email:</strong> samosas@bur-rein.com</li>
+      </ul>
+    </section>
+      <h2>Submit Your Service</h2>
+      <p>Are you a service provider in the Bur-Rein area? Submit your service to be listed on our website!</p>
+      <form action="https://formspree.io/f/mwkjngrv" method="POST">
+        <label for="name">Service Provider Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Service:</label>
+        <input type="text" id="service" name="service" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="submit">Submit Service</button>
+        <section id="submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Bur-Rein Services. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
